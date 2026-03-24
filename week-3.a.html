@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q3a - CSS Selector Forms</title>
+  <style>
+    body { background-color: #f2f6ff; }
+
+    /* 1. Element Selector */
+    p { color: blue; }
+
+    /* 2. ID Selector */
+    #main-title { color: darkred; text-align: center; }
+
+    /* 3. Class Selector */
+    .highlight { background-color: lightyellow; }
+
+    /* 4. Group Selector */
+    h2, h3 { color: green; }
+
+    /* 5. Universal Selector */
+    * { font-family: Arial, sans-serif; }
+
+    /* 6. Descendant Selector */
+    div p { font-style: italic; }
+
+    /* 7. Child Selector */
+    div > span { color: purple; font-weight: bold; }
+
+    /* 8. Adjacent Sibling Selector */
+    h3 + p { color: orange; }
+
+    /* 9. General Sibling Selector */
+    h3 ~ p { background-color: #e0e0e0; }
+  </style>
+</head>
+<body>
+
+  <h1 id="main-title">Q3a: CSS Selector Forms</h1>
+
+  <h2>Simple Selectors</h2>
+  <p>Element Selector – this paragraph is blue.</p>
+  <p class="highlight">Class Selector – this paragraph has yellow background.</p>
+
+  <h3>Group Selector Example</h3>
+  <div>
+    <p>Descendant Selector – italic (div p)</p>
+    <span>Child Selector – purple bold (div &gt; span)</span>
+  </div>
+
+  <h2>Combinator Selectors</h2>
+  <h3>Adjacent and General Sibling</h3>
+  <p>Adjacent sibling – orange (h3 + p)</p>
+  <p>General sibling – grey background (h3 ~ p)</p>
+  <p>Also general sibling – grey background (h3 ~ p)</p>
+
+</body>
+</html>

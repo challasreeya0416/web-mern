@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q3c - JavaScript Output Methods</title>
+  <script>
+    function showAlert() {
+      alert("This output is displayed using alert()");
+    }
+
+    function writeDocument() {
+      document.write("This output is displayed using document.write()");
+    }
+
+    function showInnerHTML() {
+      document.getElementById("output").innerHTML =
+        "This output is displayed using innerHTML";
+    }
+
+    function showConsole() {
+      console.log("This output is displayed using console.log()");
+      alert("Check the browser console (F12) for console.log output!");
+    }
+  </script>
+</head>
+<body>
+
+  <h1>Q3c: Different Ways of Displaying Output in JavaScript</h1>
+
+  <button onclick="showAlert()">1. alert()</button>
+  <br><br>
+  <button onclick="writeDocument()">2. document.write()</button>
+  <br><br>
+  <button onclick="showInnerHTML()">3. innerHTML</button>
+  <p id="output"></p>
+  <button onclick="showConsole()">4. console.log()</button>
+
+</body>
+</html>
