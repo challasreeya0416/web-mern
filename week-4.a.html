@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q4a - JavaScript Pre-defined Objects</title>
+</head>
+<body>
+
+  <h1>Q4a: JavaScript Pre-defined Objects</h1>
+  <p id="result"></p>
+
+  <script>
+    // 1. Window Object
+    window.alert("Welcome to JavaScript Objects Program");
+    let name = window.prompt("Enter your name:");
+
+    // 2. String Object
+    let upperName    = name.toUpperCase();
+    let lengthOfName = name.length;
+
+    // 3. Math Object
+    let number     = 25;
+    let sqrtValue  = Math.sqrt(number);
+    let powerValue = Math.pow(5, 2);
+
+    // 4. Document Object
+    document.getElementById("result").innerHTML =
+      "Name: "              + name          + "<br>" +
+      "Uppercase Name: "    + upperName     + "<br>" +
+      "Length of Name: "    + lengthOfName  + "<br>" +
+      "Square Root of 25: " + sqrtValue     + "<br>" +
+      "5 Power 2: "         + powerValue;
+  </script>
+
+</body>
+</html>
